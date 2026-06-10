@@ -1,6 +1,5 @@
 module flopr (input  clk, reset,
-               input  [WIDTH-1:0] d,
-               input stallF, // falta negar 
+               input  [WIDTH-1:0] d, 
                output [WIDTH-1:0] q);
 
   parameter WIDTH = 8;

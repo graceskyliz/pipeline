@@ -1,13 +1,14 @@
 module controller(input  [6:0] op,
                   input  [2:0] funct3,
                   input        funct7b5,
-                  input        Zero,
-                  output [1:0] ResultSrc, 
-                  output MemWrite,
-                  output PCSrc, ALUSrc,
+                  output [1:0] ResultSrcD, 
+                  output MemWriteD,
+                  output JumpD,
+                  output BranchD,
+                  output ALUSrcD,
                   output RegWrite, Jump,
-                  output [1:0] ImmSrc, 
-                  output [2:0] ALUControl);
+                  output [1:0] ImmSrcD, 
+                  output [2:0] ALUControlID);
   
   wire [1:0] ALUOp; 
   wire       Branch; 
